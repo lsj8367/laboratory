@@ -10,4 +10,5 @@
 rootProject.name = 'laboratory'
 include 'reflection'
 include 'jpa'
+include 'jvm'
 
