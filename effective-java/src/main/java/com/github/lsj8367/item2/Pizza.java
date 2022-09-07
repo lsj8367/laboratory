@@ -1,4 +1,4 @@
-package com.github.lsj8367;
+package com.github.lsj8367.item2;
 
 import java.util.EnumSet;
 import java.util.Objects;

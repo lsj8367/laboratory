@@ -1,4 +1,4 @@
-package com.github.lsj8367;
+package com.github.lsj8367.item2;
 
 public class Calzone extends Pizza {
 

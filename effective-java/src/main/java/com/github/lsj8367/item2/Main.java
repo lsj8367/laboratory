@@ -1,7 +1,7 @@
-package com.github.lsj8367;
+package com.github.lsj8367.item2;
 
-import com.github.lsj8367.NyPizza.Size;
-import com.github.lsj8367.Pizza.Topping;
+import com.github.lsj8367.item2.NyPizza.Size;
+import com.github.lsj8367.item2.Pizza.Topping;
 
 public class Main {
 
