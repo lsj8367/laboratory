@@ -1,9 +1,7 @@
 package com.github.lsj8367.item5;
 
-public class Dictionary {
+public interface Dictionary {
 
-    public boolean contains(final String word) {
-        return false;
-    }
+    boolean contains(final String word);
 
 }
