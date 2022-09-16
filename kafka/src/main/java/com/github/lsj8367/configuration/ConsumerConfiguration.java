@@ -32,7 +32,8 @@ public class ConsumerConfiguration {
 
     private ConsumerFactory<String, MessageReq> consumerFactory() {
         return new DefaultKafkaConsumerFactory<>(
-            configProperties(), new StringDeserializer(), new JsonDeserializer<>(MessageReq.class)
+            configProperties(), new StringDeserializer(),
+            new JsonDeserializer<>(MessageReq.class, false)
         );
     }
 
