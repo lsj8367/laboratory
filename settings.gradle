@@ -12,4 +12,5 @@ include 'reflection'
 include 'jpa'
 include 'jvm'
 include 'effective-java'
+include 'kafka'
 
