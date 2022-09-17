@@ -10,22 +10,24 @@ public class CaseIntensiveString {
         this.s = Objects.requireNonNull(s);
     }
 
+//    @Override
+//    public boolean equals(final Object o) {
+//        if (o instanceof CaseIntensiveString c) {
+//            return s.equalsIgnoreCase(c.s);
+//        }
+//
+//        if (o instanceof String str) {
+//            return s.equalsIgnoreCase(str);
+//        }
+//
+//        return false;
+//    }
+
+
     @Override
     public boolean equals(final Object o) {
-        if (o instanceof CaseIntensiveString c) {
-            return s.equalsIgnoreCase(c.s);
-        }
-
-        if (o instanceof String str) {
-            return s.equalsIgnoreCase(str);
-        }
-
-        return false;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(s);
+        return o instanceof CaseIntensiveString &&
+            ((CaseIntensiveString) o).s.equalsIgnoreCase(this.s);
     }
 
 }

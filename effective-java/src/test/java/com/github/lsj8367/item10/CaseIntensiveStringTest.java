@@ -7,10 +7,12 @@ import org.junit.jupiter.api.Test;
 class CaseIntensiveStringTest {
 
     private final CaseIntensiveString cis = new CaseIntensiveString("Example");
+
     @Test
     void equalsTrue() {
         final boolean actual = cis.equals("example");
-        assertThat(actual).isTrue();
+//        assertThat(actual).isTrue();
+        assertThat(actual).isFalse(); // 재구현된 equals에 의해 false를 도출한다.
     }
 
     @Test
