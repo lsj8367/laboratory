@@ -20,16 +20,16 @@ public class ExceptionExample {
         System.out.println();
     }
 
-    public static void main(String[] args) {
-        ExceptionExample example = new ExceptionExample();
-        try {
-            example.ioException();
-        } catch (IOException e) {
-
-        }
-        example.runtimeException();
-        example.illegalArgumentException();
-        example.nullPointerException();
-
-    }
+//    public static void main(String[] args) {
+//        ExceptionExample example = new ExceptionExample();
+//        try {
+//            example.ioException();
+//        } catch (IOException e) {
+//
+//        }
+//        example.runtimeException();
+//        example.illegalArgumentException();
+//        example.nullPointerException();
+//
+//    }
 }

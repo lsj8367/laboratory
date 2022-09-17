@@ -18,9 +18,9 @@ public class TryException {
 //    }
 
     // 두 예외가 전부 보여지는 try-with-resources
-    public static void main(String[] args) throws IOException {
-        try(BufferedReader br = new ExceptionReader(new InputStreamReader(System.in))) {
-            br.readLine();
-        }
-    }
+//    public static void main(String[] args) throws IOException {
+//        try(BufferedReader br = new ExceptionReader(new InputStreamReader(System.in))) {
+//            br.readLine();
+//        }
+//    }
 }

@@ -20,20 +20,20 @@ public class Reference {
 //        System.out.println(ss);
 //    }
 
-    public static void main(String[] args) {
-        String ss = "문자열";
-        WeakReference<String> reference = new WeakReference<>(ss);
-
-        // 이 시점에 GC의 실행 대상이 가능
-        ss = null;
-
-        System.gc();
+//    public static void main(String[] args) {
+//        String ss = "문자열";
+//        WeakReference<String> reference = new WeakReference<>(ss);
+//
+//         이 시점에 GC의 실행 대상이 가능
+//        ss = null;
+//
+//        System.gc();
 
         // gc를 명시적으로 호출했지만 컬렉션이 동작하지 않을수도 있음
         // 그래도 무조건 동작한다고 가정
-        ss = reference.get();
+//        ss = reference.get();
 
         // null 로 비어있게 된다.
-        System.out.println(ss);
-    }
+//        System.out.println(ss);
+//    }
 }
