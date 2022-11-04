@@ -13,4 +13,5 @@ include 'jpa'
 include 'jvm'
 include 'effective-java'
 include 'kafka'
+include 'async'
 
