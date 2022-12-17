@@ -1,4 +1,4 @@
-package com.github.lsj8367.presentation;
+package com.github.lsj8367.api;
 
 import com.github.lsj8367.application.HelloService;
 import java.util.Map;
