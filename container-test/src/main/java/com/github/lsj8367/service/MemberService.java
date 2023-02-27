@@ -17,8 +17,18 @@ public class MemberService {
         memberRepository.save(new Member(1L, "홍길동"));
     }
 
+    @Transactional
+    public void saveAndException() {
+        memberRepository.save(new Member(null, "홍길동"));
+        throw new RuntimeException();
+    }
+
     public Member get() {
         return memberRepository.findById(1L).orElseThrow();
+    }
+
+    public int allSize() {
+        return memberRepository.findAll().size();
     }
 
 }
