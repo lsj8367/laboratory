@@ -15,4 +15,5 @@ include 'effective-java'
 include 'kafka'
 include 'async'
 include 'container-test'
+include 'jdbc'
 
