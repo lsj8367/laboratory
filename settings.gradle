@@ -17,4 +17,5 @@ include 'async'
 include 'container-test'
 include 'jdbc'
 include 'slack'
+include 'rxjava'
 
