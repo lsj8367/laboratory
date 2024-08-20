@@ -1,7 +1,7 @@
 package com.github.lsj8367.service;
 
 import com.github.lsj8367.entity.Member;
-import com.github.lsj8367.repository.MemberRepository;
+import com.github.lsj8367.infra.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

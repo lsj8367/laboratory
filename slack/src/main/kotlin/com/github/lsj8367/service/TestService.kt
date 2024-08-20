@@ -1,6 +1,6 @@
 package com.github.lsj8367.service
 
-import com.github.lsj8367.repository.TestRepository
+import com.github.lsj8367.infra.TestRepository
 import com.github.lsj8367.service.response.CorporationResponse
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional

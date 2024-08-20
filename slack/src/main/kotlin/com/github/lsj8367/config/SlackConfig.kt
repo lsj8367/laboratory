@@ -1,6 +1,6 @@
 package com.github.lsj8367.config
 
-import com.github.lsj8367.repository.TestRepository
+import com.github.lsj8367.infra.TestRepository
 import com.slack.api.bolt.App
 import com.slack.api.bolt.AppConfig
 import org.springframework.context.annotation.Bean

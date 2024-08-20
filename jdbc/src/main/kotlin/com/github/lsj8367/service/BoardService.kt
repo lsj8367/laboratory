@@ -1,7 +1,7 @@
 package com.github.lsj8367.service
 
 import com.github.lsj8367.domain.Board
-import com.github.lsj8367.repository.BoardRepository
+import com.github.lsj8367.infra.BoardRepository
 import com.github.lsj8367.service.request.RegisterBoardRequest
 import org.springframework.stereotype.Service
 import java.time.LocalDateTime
