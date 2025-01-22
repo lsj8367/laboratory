@@ -42,4 +42,7 @@ spring:
       #org.quartz.threadPool.threadCount=10
       # Thread ???? ?? (1 ~ 10) (default 5)
       #org.quartz.threadPool.threadPriority=5
+    overwrite-existing-jobs: false # job ????
+    wait-for-jobs-to-complete-on-shutdown: true # shutdown wait
+
 

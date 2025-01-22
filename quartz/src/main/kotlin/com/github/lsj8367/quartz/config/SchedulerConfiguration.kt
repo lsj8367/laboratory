@@ -15,12 +15,10 @@ import java.util.*
 class SchedulerConfiguration {
 
     @Bean
-    fun scheduler(applicationContext: ApplicationContext?, quartzProperties: QuartzProperties): Scheduler {
-        val schedulerFactory = schedulerFactoryBean(applicationContext, quartzProperties)
-        val scheduler = schedulerFactory.getScheduler()
-
+    fun scheduler(scheduler: Scheduler): Scheduler {
         scheduler.start()
 
+//        scheduler.listenerManager.addJobListener(null)
         if (!scheduler.checkExists(JobKey.jobKey("sampleJob", "sampleJob"))) {
             val job = JobBuilder.newJob(SampleScheduler::class.java)
                     .withIdentity("sampleJob", "sampleJob")
@@ -34,19 +32,5 @@ class SchedulerConfiguration {
         }
 
         return scheduler
-    }
-
-    @Bean
-    fun schedulerFactoryBean(applicationContext: ApplicationContext?, quartzProperties: QuartzProperties): SchedulerFactoryBean {
-        val schedulerFactoryBean = SchedulerFactoryBean()
-        val jobFactory = SpringBeanJobFactory()
-        val properties = Properties()
-        properties.putAll(quartzProperties.getProperties())
-        schedulerFactoryBean.setQuartzProperties(properties)
-        schedulerFactoryBean.setJobFactory(jobFactory) // job factory 등록
-        schedulerFactoryBean.setApplicationContext(applicationContext!!) // context 등록
-        schedulerFactoryBean.setOverwriteExistingJobs(false) // job 중복 허용 (덮어쓰기)
-        schedulerFactoryBean.setWaitForJobsToCompleteOnShutdown(true) // shutdown wait 속성
-        return schedulerFactoryBean
     }
 }
